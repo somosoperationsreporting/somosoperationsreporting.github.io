@@ -1,3 +1,5 @@
+document.onReady()
+
 const el = document.getElementById("endtime")
 
 let today = new Date();
