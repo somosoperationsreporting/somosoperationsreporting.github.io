@@ -1,6 +1,6 @@
 const el = document.getElementById("endtime")
 
-let today = new Date();
+var today = new Date();
 
 const year = today.getFullYear()
 const day = today.getDate()
