@@ -8,4 +8,4 @@ const month = today.getMonth() + 1;
 const minutes = today.getMinutes();
 const hour = today.getHours();
 
-el.value = `${year}-${month}-${day}T${hour}:${minutes}`
+el.value = '${year}-${month}-${day}T${hour}:${minutes}'
