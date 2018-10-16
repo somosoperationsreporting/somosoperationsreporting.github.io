@@ -31,9 +31,7 @@
   <script src="./scripts/aws-sdk-2.2.33.min.js" type="text/javascript"></script>
   <!-- CloudWatch WDC -->
   <script src="./scripts/cloudwatch-wdc.js" type="text/javascript"></script>
-  <!-- End Date pull today -->
-  <script src="./scripts/enddateformat.js" type="text/javascript"></script>
-
+  
 </head>
 
 <body>
@@ -103,7 +101,7 @@
       <!-- <label for="starttime">Start time</label><input type="text" id="starttime" value="2016-02-02"> -->
     </div>
     <div>
-      <label for="endtime">End time</label><input type="datetime-local" id="endtime" value="2016-02-04">
+      <label for="endtime">End time</label><input type="datetime-local" id="endtime" value="document.getElementById('datePicker').valueAsDate = new Date()">
       <!-- <label for="endtime">End time</label><input type="text" id="endtime" value="2016-02-04">  -->
     </div>
     <div>
