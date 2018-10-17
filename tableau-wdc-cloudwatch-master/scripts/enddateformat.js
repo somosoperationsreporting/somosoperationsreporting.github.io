@@ -10,7 +10,7 @@ var month = today.getMonth() + 1;
 var minutes = today.getMinutes();
 var hour = today.getHours();
 
-el.value = '${year}-${month}-${day}T${hour}:${minutes}'
+el.value = year+"-"+month+"-"+day+"T"+hour+":"+minutes
   
   
 };
