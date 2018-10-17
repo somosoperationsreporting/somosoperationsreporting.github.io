@@ -1,14 +1,14 @@
 window.onload = function() {
  
-const el = document.getElementById("endtime")
+var el = document.getElementById("endtime")
 
-let today = new Date();
+var today = new Date();
 
-const year = today.getFullYear();
-const day = today.getDate();
-const month = today.getMonth() + 1;
-const minutes = today.getMinutes();
-const hour = today.getHours();
+var year = today.getFullYear();
+var day = today.getDate();
+var month = today.getMonth() + 1;
+var minutes = today.getMinutes();
+var hour = today.getHours();
 
 el.value = '${year}-${month}-${day}T${hour}:${minutes}'
   
