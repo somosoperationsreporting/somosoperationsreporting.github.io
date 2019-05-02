@@ -97,6 +97,21 @@ function ready(fn) {
 ready(function(){
   //prepare the Tableau WDC functions
   cwWdcInitialize();
+
+
+var today = new Date();
+ 
+var yearp = (today.getFullYear())-1;
+var yearn = (today.getFullYear());
+var day = ("0" + (today.getDate())).slice(-2);
+var month = ("0" +(today.getMonth() + 1)).slice(-2);
+var minutes = today.getMinutes();
+var hour = today.getHours();
+
+
+var daten = yearn+"-"+month+"-"+day
+var datep = yearp+"-"+month+"-"+day
+
   
   //assign the submit event function
   var element = document.getElementById("submitButton");
@@ -123,8 +138,8 @@ ready(function(){
       dimensions = null
     };
 
-    var starttime = new Date(document.querySelector('#starttime').value.trim());
-    var endtime = new Date(document.querySelector('#endtime').value.trim());
+    var starttime = new Date(Date.parse(datep));
+    var endtime = new Date(Date.parse(daten));
     var period = parseInt(document.querySelector('#period').value.trim(), 10) * 60;
     var statistics = [];
     var checkboxes = document.querySelectorAll("#statistics");
